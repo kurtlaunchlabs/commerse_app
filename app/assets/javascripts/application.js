@@ -23,6 +23,24 @@
 
 
 
+
+// $(document).ready(function(){
+// 	$( "#pull-content-header" ).click(function() {
+// 		console.log("Pass to click content header");
+// 	 $('#search').width(189);
+// 	});
+
+// });
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function() {
   $('#category-search').change(function(){
   	if (jQuery(window).width() > 900) {
