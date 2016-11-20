@@ -1,0 +1,83 @@
+// This is a manifest file that'll be compiled into application.js, which will include all the files
+// listed below.
+//
+// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
+//
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// compiled file. JavaScript code in this file should be added after the last require_* statement.
+//
+// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
+// about supported directives.
+//
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+
+//= require js/jquery-2.1.3.min
+//= require js/metro
+//= requirejs/docs
+//= require js/prettify/run_prettify
+//= require js/ga
+//= require_tree .
+
+
+
+$(document).ready(function() {
+  $('#category-search').change(function(){
+  	if (jQuery(window).width() > 900) {
+  		console.log("Pass in first onchange");
+    $("#option-search-tmp-selected").html($('#category-search option:selected').text()); 
+     $(this).width($("#option-search-tmp-selected").text().length * 7.5 + 15);  
+     var margin = $("#option-search-tmp-selected").text().length * 7.5 + 11;
+     if(margin < 60){
+     	margin = 60;
+     	$(this).width(60);
+     	document.getElementById('search').style.marginLeft = "60px";
+  	}else{
+    document.getElementById('search').style.marginLeft = margin+"px";
+  	}
+  } 
+  });
+});
+
+
+
+$(window).resize(function() {
+	jQuery(document).ready(function(){
+	console.log(jQuery(window).width() + "msfmdslfmkl");
+	$("#category-search").val($("#category-search option:first").val());
+	$('#category-search').width(60);
+	document.getElementById('search').style.marginLeft = "60px";
+	if (jQuery(window).width() < 763) {
+		console.log(jQuery(window).width() + "less than 763");
+		
+		document.getElementById('search').style.marginLeft = "60px";
+		$('#search').width(189);
+		$('#category-search').width(60);
+
+		$('#category-search').change(function(){
+		console.log("Pass HEREdfsfsf");
+		if (jQuery(window).width() < 763) {
+			$(this).width(60);
+		}
+		
+
+
+		});
+
+	}  
+
+	if (jQuery(window).width() > 763) {
+		if($('#category-search').width() == 60){
+		$('#search').width(500);
+		console.log("Pass HEREdfsfsf Greater than Inside IF");
+
+	}
+
+	console.log("Pass HEREdfsfsf Greater than");
+	}
+	});
+
+	
+});

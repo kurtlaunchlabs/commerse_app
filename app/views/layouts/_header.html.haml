@@ -1,0 +1,33 @@
+.app-bar.header-wrapper{"data-flexstyle" => "sidebar2", "data-role" => "appbar",style:"height:20%"}
+  %a.app-bar-element.branding{style:"height: 50%;"} Metro UI CSS
+  %ul.app-bar-menu
+  .app-bar-pullbutton.automatic#pull-content-header
+  %ul.app-bar-menu{"data-flexdirection" => "reverse"}
+
+    %li
+      %div.input-append
+        %span.prepend-button
+          .select.active-container
+            %select#category-search
+              %option All
+              %option 2dsfsdfdsfdsfdsfsfgdfgdfgfghfhgf
+              %option 3fsdfdsfdsfdsfdsfd
+            %select#select-search-tmp-selected
+              %option#option-search-tmp-selected
+        .input-control.text#search{"data-role" => "input"}
+          %input{:type => "text",placeholder: "Search.."}/
+          %button.button{style: "height: 50px;"}
+            %span.mif-search.mif-2x
+          
+
+  %ul.app-bar-menu.header-menu-toggle.place-right{"data-flexdirection" => "reverse"}
+
+    %li
+      %a{:href => "#"}
+        %span.mif-phone.icon>
+        Call
+    %li
+      %a{:href => "#"}
+        %span.mif-cart.icon
+        Cart(0)
+
