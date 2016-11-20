@@ -8,7 +8,7 @@
 		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
 		= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 	%body
-		%header	
+		%header.fixed-top{style:"height: 35%;"}
 			= render "layouts/header"
 			= yield
 		%div.grid-fluid
