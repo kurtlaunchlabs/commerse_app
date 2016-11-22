@@ -11,10 +11,5 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
- *= require css/metro
- *= require css/metro-icons
- *= require css/metro-responsive
- *= require css/metro-schemes
- *= require css/docs
  *= require_self
  */

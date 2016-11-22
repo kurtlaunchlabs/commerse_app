@@ -1,16 +1,25 @@
-%hr.menu-divider
-.tabcontrol2.tabs-bottom{"data-role" => "tabcontrol",style: "background-color: navy;"}
-  %ul.tabs.tabs-bottom
+%div.line-separator
+.tabcontrol2.menu-tab{"data-role" => "tabcontrol",style: "background-color: #232f3e;"}
+  %ul.tabs.tabs-bottom.tab-menu-list{style: "margin-left: 8%;"}
     %li
-      %a{:href => "#frame_1_1"} Tab 1
+      %a{:href => "#frame_1_electronics"} Electronics
     %li
-      %a{:href => "#frame_1_2"} Tab 2
-    %li.disabled
-      %a{:href => ""} Tab 3
+      %a{:href => "#frame_1_musicgadgets"} Music&Gadgets
+    %li
+      %a{:href => "#frame_1_mens"} Mens Fashion
+    %li
+      %a{:href => "#frame_1_womens"} Womens Fashion
+    %li
+      %a{:href => "#frame_1_home"} Home&Living
+    %li
+      %a{:href => "#frame_1_lifestyle"} Lifestyle
+ 
   .frames.bg-grayLight
-    #frame_1_1.frame 1
-    #frame_1_2.frame 2
-
-
+    #frame_1_electronics.frame Electronics
+    #frame_1_musicgadgets.frame music&gadgets
+    #frame_1_mens.frame Mens Fashion
+    #frame_1_womens.frame Womens Fashion
+    #frame_1_home.frame Home&Living
+    #frame_1_lifestyle.frame Lifestyle
 
 
