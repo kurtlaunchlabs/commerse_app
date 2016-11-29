@@ -26,8 +26,26 @@
 
 // });
 
+var select = '.tabcontrol2 ul li a'
+var display = "";
 
+// hover tab menu show all menu
+$(document).ready(function(){
+	$('.tabcontrol2 ul li').removeClass('active'); // hide the first element in the menu tab
+	$('#frame_1_electronics.frame').hide(); //hide the first element in the menu tab
+  //   $(select).hover(function(){
+	 //    $(this).addClass('active');
+	 //     display =  $(this).attr('href');
+		// $(display + '.frame').show();
+		// console.log(display + '.frame' + " sfsd");
 
+  //   },function(){
+  //   	 $(display + '.frame').hide();
+	 //     $(this).removeClass('active');
+	   
+  //   });
+ 
+});
 
 
 
