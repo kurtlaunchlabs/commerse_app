@@ -26,35 +26,47 @@
 
 // });
 
-// var select = '.tabcontrol2 ul li a'
-// var display = "";
 
-// hover tab menu show all menu
-//$(document).ready(function(){
-	// $('.tabcontrol2 ul li').removeClass('active'); // hide the first element in the menu tab
-//	 $('#frame_1_electronics.frame').hide(); //hide the first element in the menu tab
- //    $(select).hover(function(){
- //    	//$(".tabcontrol2 ul li a.active").removeClass('active');
-  
-	//     $(this).addClass('active');
-	//      display =  $(this).attr('href');
-	// 	$(display + '.frame').show();
-	// 	//console.log(ref_this + '.frame' + " sfsd");
 
- //    },function(){
- //    	 $(display + '.frame').hide();
-	//      $(this).removeClass('active');
-	   
- //    });
+//hover tab menu show all menu
+$(document).ready(function(){
+  var select = '.tabcontrol2 ul li a'
+  var display = "";
+  var last = "";
+  var hover = "";
+	$('.active').removeClass('active'); // hide the first element in the menu tab
+	 $('#frame_1_electronics.frame').hide(); //hide the first element in the menu tab
+    $(select).hover(function(){
+    	//$(".tabcontrol2 ul li a.active").removeClass('active');
+      $('.active').removeClass('active'); 
+	    $(this).addClass('active');
+	     display =  $(this).attr('href');
+       $(last).hide();
+		  $(display + '.frame').show();
+     $(display).hover(function(){ // hover for menu options in menu tab
+          zz
 
-//});
+      },function(){
+        $(display + '.frame').hide();
+        $('.active').removeClass('active'); 
+     });
+
+    },function(){
+          last = display + '.frame';
+             
+    	 // $(display + '.frame').hide();
+	     // $(this).removeClass('active');
+    });
+
+
+});
 
 
 
 
 $(document).ready(function() {
-    $('.tabcontrol2 ul li').removeClass('active'); // hide the first element in the menu tab
-   $('#frame_1_electronics.frame').hide();
+   //  $('.tabcontrol2 ul li').removeClass('active'); // hide the first element in the menu tab
+   // $('#frame_1_electronics.frame').hide();
   $('#category-search').change(function(){
   	if (jQuery(window).width() > 900) {
   		console.log("Pass in first onchange");
