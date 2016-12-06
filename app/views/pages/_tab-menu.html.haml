@@ -23,15 +23,27 @@
       %a{:href => "#frame_1_brand"} Shop Brands
  
   .frames.bg-grayLight
-    #frame_1_electronics.frame Electronics
-    #frame_1_musicgadgets.frame music&gadgets
-    #frame_1_mens.frame Mens Fashion
-    #frame_1_womens.frame Womens Fashion
-    #frame_1_home.frame Home&Living
-    #frame_1_health.frame Lifestyle
-    #frame_1_sports.frame Travels
-    #frame_1_babytoys.frame Babys&Toys
-    #frame_1_higlights.frame Highlights
-    #frame_1_brand.frame Shop Brands
+    #frame_1_electronics.frame 
+      = render "tab-menus/electronics-tab-menu"
+    #frame_1_musicgadgets.frame 
+      = render "tab-menus/music_motor_more"
+    #frame_1_mens.frame 
+      = render "tab-menus/mens_fashion"
+
+    #frame_1_womens.frame 
+      = render "tab-menus/womens_fashion"
+    #frame_1_home.frame
+      = render "tab-menus/home_living"
+
+    #frame_1_health.frame 
+      = render "tab-menus/health_beauty"
+    #frame_1_sports.frame 
+      = render "tab-menus/sport_travel"
+    #frame_1_babytoys.frame 
+      = render "tab-menus/baby_toys"
+    #frame_1_higlights.frame 
+      = render "tab-menus/highlights"
+    #frame_1_brand.frame 
+      = render "tab-menus/brands"
 
 
